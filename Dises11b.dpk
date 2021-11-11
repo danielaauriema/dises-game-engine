@@ -1,0 +1,59 @@
+{ ********************************************************************** }
+{  Dises 1.1b - Dises Game Engine Copyright (C) 2008 Danyz               }
+{                                                                        }
+{  This program is free software: you can redistribute it and/or modify  }
+{  it under the terms of the GNU General Public License as published by  }
+{  the Free Software Foundation, either version 3 of the License, or     }
+{  any later version.                                                    }
+{                                                                        }
+{  This program is distributed in the hope that it will be useful,       }
+{  but WITHOUT ANY WARRANTY; without even the implied warranty of        }
+{  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          }
+{   GNU General Public License for more details. (www.gnu.org)           }
+{ ********************************************************************** }
+
+package Dises11b;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  VclSmp;
+
+contains
+  Dises in 'Dises.pas' {xGame},
+  DisesReg in 'DisesReg.pas',
+  DxUtils in 'DxUtils.pas',
+  DxAI in 'DxAI.pas',
+  DxStageEditor in 'DxStageEditor.pas' {StageEditor},
+  DxMapEditor in 'DxMapEditor.pas' {MapEditor},
+  DxMapSize in 'DxMapSize.pas' {FrmMapSize};
+
+end.
