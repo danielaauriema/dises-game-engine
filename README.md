@@ -5,7 +5,7 @@ This is my Delphi Game Engine.
 
 It's a Borland Package Library to share common game components between projects.
 
-It was first released in 2008 and it don't uses GPU and other advanced graphical resources.
+It was first released in 2008 and it doesn't use GPU and other advanced graphical resources.
 
 The main objective of this project is simulate basic game input, simple physics concepts like gravity, acceleration and colision, the basic game loop, a sample tile map editor, sprite animations and so on using a double frame buffer to render the graphical interface.
 
